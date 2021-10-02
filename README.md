@@ -3,10 +3,6 @@
 
 -   By Julien Barbier, co-founder & CEO
 -   Project to be done in teams of 2 people (your team: Arsene Awounou, Pericles Adjovi
--   Ongoing project - started 10-01-2021, must end by 10-06-2021 (in 4 days) - you're done with 0% of tasks.
--   Checker will be released at 10-03-2021 06:00 PM
--   **Manual QA review must be done** (request it when you are done with the project)
--   QA review fully automated.
 
 Concepts
 --------
