@@ -2,7 +2,7 @@
 ================
 
 -   By Julien Barbier, co-founder & CEO
--   Project to be done in teams of 2 people (your team: Arsene Awounou, Pericles Adjovi
+
 
 Concepts
 --------
