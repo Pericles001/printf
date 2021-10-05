@@ -49,4 +49,16 @@ unsigned int (*func)(va_list, buffer_t *,
  unsigned char, int, int, unsigned char);
 } converter_t;
 
+/**
+*struct flag_s - A new type defining a flags struct
+*@flag: A character representing a flag
+*@value:The integer value of flag
+*/
+typedef struct flag_s
+{
+unsigned char flag;
+unsigned char value;
+} flag_t;
+
+
 #endif /* MAIN_H */
