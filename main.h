@@ -75,6 +75,13 @@ unsigned int convert_percent(va_list args, buffer_t *output,
 /*Handlers*/
 
 /*Modifiers*/
+unsigned int print_width(buffer_t *output, unsigned int printed,
+	unsigned char flags, int wid);
+unsigned int print_string_width(buffer_t *output,
+	unsigned char flags, int wid, int prec, int size);
+unsigned int print_neg_width(buffer_t *output, unsigned int printed,
+	unsigned char flags, int wid);
+
 
 
 
