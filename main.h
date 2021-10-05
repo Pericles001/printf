@@ -60,5 +60,24 @@ unsigned char flag;
 unsigned char value;
 } flag_t;
 
+int _printf(const char *format, ...);
+
+/*conversion specifier functions*/
+unsigned int convert_c(va_list args, buffer_t *output,
+	unsigned char flags, int wid, int prec, unsigned char len);
+unsigned int convert_s(va_list args, buffer_t *output,
+	unsigned char flags, int wid, int prec, unsigned char len);
+unsigned int converter_di(va_list args, buffer_t *output,
+	unsigned char flags, int wid, int prec, unsigned char len);
+unsigned int convert_percent(va_list args, buffer_t *output,
+	unsigned char flags, int wid, int prec, unsigned char len);
+
+/*Handlers*/
+
+/*Modifiers*/
+
+/*Helper functions*/
+
+
 
 #endif /* MAIN_H */
