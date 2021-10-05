@@ -20,4 +20,10 @@
 #define NEG_FLAG ((flags >> 4) & 1)
 
 
+/* Length Modifier Macros*/
+#define SHORT 1
+#define LONG 2
+
+
+
 #endif /* MAIN_H */
