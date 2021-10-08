@@ -35,3 +35,33 @@ unsigned int print_width(buffer_t *output, unsigned int printed,
 	return (ret);
 }
 
+
+/**
+ *print_string_width - stores leading spaces to a buffer
+ *	for a width modifier
+ *@output: A buffer_t struct containing a character array
+ *@flags: flag modifier
+ *@wid: A width modifier
+ *@prec: A precision modifier
+ *@size: The size of string
+ *
+ *
+ *Return: The number of bytes stored to the buffer
+ */
+
+
+unsigned int print_string_width(buffer_t *output,
+		unsigned char flags, int wid, int precn, int size)
+{
+	unsigned int ret = 0;
+	char width = ' ';
+
+	if (NEG_FLAG == 0)
+	{
+		wid -= (prec == -1) ? size : prec;
+		for (; wid > 0; wid--)
+			ret += _memcpy(output, &width, 1);
+	}
+
+	return (ret);
+}
