@@ -71,6 +71,26 @@ unsigned int converter_di(va_list args, buffer_t *output,
 	unsigned char flags, int wid, int prec, unsigned char len);
 unsigned int convert_percent(va_list args, buffer_t *output,
 	unsigned char flags, int wid, int prec, unsigned char len);
+unsigned int convert_b(va_list args, buffer_t *output,
+	unsigned char flags, int wid, int prec, unsigned char len);
+unsigned int convert_u(va_list args, buffer_t *output,
+	unsigned char flags, int wid, int prec, unsigned char len);
+unsigned int convert_o(va_list args, buffer_t *output,
+	unsigned char flags, int wid, int prec, unsigned char len);
+unsigned int convert_x(va_list args, buffer_t *output,
+	unsigned char flags, int wid, int prec, unsigned char len);
+unsigned int convert_X(va_list args, buffer_t *output,
+	unsigned char flags, int wid, int prec, unsigned char len);
+unsigned int convert_S(va_list args, buffer_t *output,
+	unsigned char flags, int wid, int prec, unsigned char len);
+unsigned int convert_p(va_list args, buffer_t *output,
+	unsigned char flags, int wid, int prec, unsigned char len);
+unsigned int convert_r(va_list args, buffer_t *output,
+	unsigned char flags, int wid, int prec, unsigned char len);
+unsigned int convert_R(va_list args, buffer_t *output,
+	unsigned char flags, int wid, int prec, unsigned char len);
+
+
 
 /*Handlers*/
 unsigned char handle_flags(const char *flags, char *index);
@@ -87,6 +107,7 @@ unsigned int print_string_width(buffer_t *output,
 	unsigned char flags, int wid, int prec, int size);
 unsigned int print_neg_width(buffer_t *output, unsigned int printed,
 	unsigned char flags, int wid);
+
 
 
 
