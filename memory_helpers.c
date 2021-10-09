@@ -2,7 +2,8 @@
 
 
 
-unsigned int _memcpy();
+
+unsigned int _memcpy(void);
 void free_buffer(buffer_t *output);
 buffer_t *init_buffer(void);
 

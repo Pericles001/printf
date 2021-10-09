@@ -166,7 +166,8 @@ return (value);
 
 
 /**
- * handle_specifiers - Matches a conversion specifier with
+ *handle_specifiers - Matches a conversion specifier with
+ *
  *                     a corresponding conversion function.
  * @specifier: A pointer to a potential conversion specifier.
  *
@@ -174,7 +175,7 @@ return (value);
  *         Otherwise - NULL.
  */
 unsigned int (*handle_specifiers(const char *specifier))(va_list, buffer_t *,
- 		unsigned char, int, int, unsigned char)
+		unsigned char, int, int, unsigned char)
 {
 int i;
 converter_t converters[] = {
