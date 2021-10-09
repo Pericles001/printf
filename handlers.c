@@ -111,3 +111,16 @@ modifier++;
 
 return (value);
 }
+
+
+/**
+ * handle_precision - Matches a precision modifier with
+ *                    its corresponding value.
+ * @args: A va_list of arguments.
+ * @modifier: A pointer to a potential precision modifier.
+ * @index: An index counter for the original format string.
+ *
+ * Return: If a precision modifier is matched - its value.
+ *         If the precision modifier is empty, zero, or negative - 0.
+ *         Otherwise - -1.
+ */
