@@ -148,3 +148,16 @@ unsigned int convert_r(va_list args, buffer_t *output,
 
 	return (ret);
 }
+
+/**
+ * convert_R - Converts a string to ROT13 and stores
+ *             it to a buffer contained in a struct.
+ * @args: A va_list pointing to the string to be converted.
+ * @flags: Flag modifiers.
+ * @wid: A width modifier.
+ * @prec: A precision modifier.
+ * @len: A lenth modifier.
+ * @output: A buffer_t struct containing a character array.
+ *
+ * Return: The number of bytes stored to the buffer.
+ */
