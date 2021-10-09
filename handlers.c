@@ -77,3 +77,14 @@ unsigned char handle_length(const char *modifier, char *index)
 
 	return (0);
 }
+
+
+/**
+ * handle_width - Matches a width modifier with its corresponding value.
+ * @args: A va_list of arguments.
+ * @modifier: A pointer to a potential width modifier.
+ * @index: An index counter for the original format string.
+ *
+ * Return: If a width modifier is matched - its value.
+ *         Otherwise - 0.
+ */
