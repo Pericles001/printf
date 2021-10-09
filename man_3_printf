@@ -282,4 +282,4 @@ function \fBprintf()\fR. This man page borrows from the corresponding Linux
 man page printf(3).
 
 .SH AUTHOR
-Brennan D Baraban and Michael Klein
+Arsene Awounou Pericles Adjovi
