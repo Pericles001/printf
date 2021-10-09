@@ -34,10 +34,10 @@ unsigned int _memcpy(buffer_t *output, const char *src, unsigned int n)
 		}
 		else
 			(output->buffer)++;
-		
-		return (n);
-	}
 
+
+	}
+return (n);
 
 }
 
@@ -59,7 +59,7 @@ void free_buffer(buffer_t *output)
 
 
 /**
- * free_buffer - initialize a variable of struct type buffer_t 
+ * free_buffer - initialize a variable of struct type buffer_t
  *
  *
  * Return: A pointer to the initialized buffer_t
