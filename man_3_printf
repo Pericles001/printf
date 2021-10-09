@@ -4,7 +4,7 @@
 .B _printf\fR \- formatted output conversion
 
 .SH SYNOPSIS
-.B #include \fB"holberton.h"
+.B #include \fB"main.h"
 
 .B int printf(const char *\fIformat\fB, ...);
 
@@ -221,7 +221,7 @@ Francisco, CA 94103", followed by a new line, where \fIstreet\fR, \fIcity\fR,
 and \fIstate\fR are pointers to strings:
 
 .RS
-#include "holberton.h"
+#include "main.h"
 
 int main(void)
 
@@ -242,7 +242,7 @@ To print the result of basic mathematical operations prepended by signs and
 all numbers printed with a minimum precision of two digits:
 
 .RS
-#include "holberton.h"
+#include "main.h"
 
 int main(void)
 
@@ -259,7 +259,7 @@ To print the values of LONG_MAX and LONG_MIN aligned and
 left-justified with a width of 30:
 
 .RS
-#include "holberton.h"
+#include "main.h"
 
 #include <limits.h>
 

@@ -1,18 +1,22 @@
 #include "main.h"
 
+unsigned int print_width(buffer_t *output, unsigned int printed,
+		unsigned char flags, int wid);
+unsigned int print_string_width(buffer_t *output,
+		unsigned char flags, int wid, int prec, int size);
+unsigned int print_neg_width(buffer_t *output, unsigned int printed,
+		unsigned char flags, int wid);
 
 /**
- *print_width - stores leading spaces to a buffer for a width modifier.
- *@output: A buffer_t struct containing a character array.
- *@printed: The current number of characters already printed to output
- *	for a given number specifier
- *@flags: flags modifier
- *@wid: a width modifier
+ * print_width - Stores leading spaces to a buffer for a width modifier.
+ * @output: A buffer_t struct containing a character array.
+ * @printed: The current number of characters already printed to output
+ *           for a given number specifier.
+ * @flags: Flag modifiers.
+ * @wid: A width modifier.
  *
- *Return: The number of bytes stored to the buffer.
+ * Return: The number of bytes stored to the buffer.
  */
-
-
 unsigned int print_width(buffer_t *output, unsigned int printed,
 		unsigned char flags, int wid)
 {
@@ -25,25 +29,19 @@ unsigned int print_width(buffer_t *output, unsigned int printed,
 			ret += _memcpy(output, &width, 1);
 	}
 
-
 	return (ret);
 }
 
-
 /**
- *print_string_width - stores leading spaces to a buffer
- *	for a width modifier
- *@output: A buffer_t struct containing a character array
- *@flags: flag modifier
- *@wid: A width modifier
- *@prec: A precision modifier
- *@size: The size of string
+ * print_string_width - Stores leading spaces to a buffer for a width modifier.
+ * @output: A buffer_t struct containing a character array.
+ * @flags: Flag modifiers.
+ * @wid: A width modifier.
+ * @prec: A precision modifier.
+ * @size: The size of the string.
  *
- *
- *Return: The number of bytes stored to the buffer
+ * Return: The number of bytes stored to the buffer.
  */
-
-
 unsigned int print_string_width(buffer_t *output,
 		unsigned char flags, int wid, int prec, int size)
 {
@@ -60,18 +58,16 @@ unsigned int print_string_width(buffer_t *output,
 	return (ret);
 }
 
-
 /**
- *print_neg_width - Stores trailing spaces to a buffer for a '-' flag
- *@output: A buffer_t struct containing a character array
- *@printed: The current number of bytes already stored to output
- *	for a given specifier
- *@flags: Flag modifiers
- *@wid: A width modifier
+ * print_neg_width - Stores trailing spaces to a buffer for a '-' flag.
+ * @output: A buffer_t struct containing a character array.
+ * @printed: The current number of bytes already stored to output
+ *           for a given specifier.
+ * @flags: Flag modifiers.
+ * @wid: A width modifier.
  *
- *Return: The number of bytes stored to the buffer
+ * Return: The number of bytes stored to the buffer.
  */
-
 unsigned int print_neg_width(buffer_t *output, unsigned int printed,
 		unsigned char flags, int wid)
 {
