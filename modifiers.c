@@ -51,7 +51,7 @@ unsigned int print_width(buffer_t *output, unsigned int printed,
 
 
 unsigned int print_string_width(buffer_t *output,
-		unsigned char flags, int wid, int precn, int size)
+		unsigned char flags, int wid, int prec, int size)
 {
 	unsigned int ret = 0;
 	char width = ' ';
