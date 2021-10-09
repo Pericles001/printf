@@ -80,7 +80,7 @@ int run_printf(const char *format, va_list args, buffer_t *output)
 * (excluding the null byte used to end output to strings)
 */
 
-int _printf(char *format, ...)
+int _printf(const char *format, ...)
 {
 	buffer_t *output;
 	va_list args;
