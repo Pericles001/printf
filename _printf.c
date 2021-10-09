@@ -31,7 +31,6 @@ void cleanup(va_list args, buffer_t *output)
 
 int run_printf(const char *format, va_list args, buffer_t *output)
 {
-
 	int i, wid, prec, ret = 0;
 	char tmp;
 	unsigned char flags, len;
@@ -48,7 +47,9 @@ int run_printf(const char *format, va_list args, buffer_t *output)
 			wid = handle_width(args, format + i + tmp + 1, &tmp);
 			prec = handle_precision(args, format + i + tmp + 1,
 					&tmp);
-			len = handle_specifiers(format + i + tmp + 1);
+			len = handle_length(format + i + tmp + 1, &tmp);
+
+			f = handle_specifiers(format + i + tmp + 1);
 			if (f != NULL)
 			{
 				i += tmp + 1;
@@ -67,7 +68,6 @@ int run_printf(const char *format, va_list args, buffer_t *output)
 	cleanup(args, output);
 	return (ret);
 }
-
 
 
 
