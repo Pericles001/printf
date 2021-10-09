@@ -24,7 +24,7 @@ unsigned int print_width(buffer_t *output, unsigned int printed,
 		unsigned char flags, int wid)
 {
 	unsigned int ret = 0;
-	char width = '';
+	char width = ' ';
 
 	if (NEG_FLAG == 0)
 	{
