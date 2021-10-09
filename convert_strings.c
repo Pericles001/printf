@@ -117,3 +117,6 @@ unsigned int convert_S(va_list args, buffer_t *output,
  *
  * Return: The number of bytes stored to the buffer.
  */
+unsigned int convert_r(va_list args, buffer_t *output,
+		unsigned char flags, int wid, int prec, unsigned char len)
+{}
