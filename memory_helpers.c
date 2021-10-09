@@ -43,6 +43,22 @@ unsigned int _memcpy(buffer_t *output, const char *src, unsigned int n)
 
 
 /**
+ * free_buffer - Frees a buffer_t struct
+ * @output: The buffer_t struct to be freed
+ */
+
+void free_buffer(buffer_t *output)
+{
+	free(output->start);
+	free(output);
+}
+
+
+
+
+
+
+/**
  * free_buffer - initialize a variable of struct type buffer_t 
  *
  *
