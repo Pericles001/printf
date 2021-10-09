@@ -60,3 +60,20 @@ return (ret);
  * Return: If a lenth modifier is matched - its corresponding value.
  *         Otherwise - 0.
  */
+
+unsigned char handle_length(const char *modifier, char *index)
+{
+	if (*modifier == 'h')
+	{
+		(*index)++;
+		return (SHORT);
+	}
+
+	else if (*modifier == '1')
+	{
+		(*index)++;
+		return (LONG);
+	}
+
+	return (0);
+}
