@@ -68,3 +68,8 @@ unsigned int convert_s(va_list args, buffer_t *output,
  * Description: Non-printable characteres (ASCII values < 32 or >= 127)
  *              are stored as \x followed by the ASCII code value in hex.
  */
+unsigned int convert_S(va_list args, buffer_t *output,
+		unsigned char flags, int wid, int prec, unsigned char len)
+{
+
+}
